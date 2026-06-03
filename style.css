@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --color-primary: #da291c; /* Rojo McDonald's */
+    --color-primary-dark: #b81d13; /* Rojo más oscuro para fondos y hover */
+    --color-accent: #ffbc0d; /* Amarillo McDonald's */
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    /* Degradado sutil para que el texto resalte sobre la imagen de fondo */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); 
+}
+
+.text-logo {
+    font-size: 2.2rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.text-logo span {
+    font-weight: 400;
+    color: #fff;
+}
+
+.lists {
+    display: flex;
+    gap: 20px;
+}
+
+.lists li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+select {
+    border: 1px solid #aaa;
+    background-color: transparent;
+    padding: 8px 15px;
+    border-radius: 2rem;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+select option {
+    color: #000;
+}
+
+.button-cta {
+    background-color: var(--color-accent);
+    padding: 10px 20px;
+    border-radius: 2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.main-section {
+    height: 100dvh;
+    background-image: url("Img/Fondo.jpg");
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    padding-top: 15rem;
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para que se lea mejor sobre la foto */
+}
+
+.main-section h4 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.button-cta-main {
+    display: block;
+    margin: 70px auto 0;
+    padding: 15px 30px;
+    background-color: var(--color-accent);
+    color: #000;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.video-presentation {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.section-time-remaining {
+    margin-top: 25rem;
+    padding-bottom: 60px;
+}
+
+.section-time-remaining h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.container-time-remaining {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.container-number > span {
+    display: inline-block;
+    margin-inline: 2px;
+    font-size: 6rem;
+    width: 6.5rem;
+    height: 9rem;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #0003;
+}
+
+.container-time p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.container-time-remaining .time-point {
+    width: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.section-cta {
+    background-color: var(--color-primary);
+    padding: 60px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(218, 41, 28, 0.3);
+}
+
+.section-cta h2 {
+    text-align: center;
+    color: var(--color-accent);
+    font-size: 3rem;
+}
+
+.section-cta p {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.container-cta-input {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container-cta-input input {
+    width: 100%;
+    margin-top: 60px;
+    height: 47px;
+    padding-left: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.container-cta-input input::placeholder {
+    color: #999;
+}
+
+.container-cta-input button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    height: 47px;
+}
+
+.section-characteristics {
+    margin-top: 80px;
+    width: 900px;
+    margin-inline: auto;
+}
+
+.container-characteristic {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 60px;
+}
+
+.container-characteristic:nth-of-type(odd) {
+    flex-direction: row;
+}
+
+.container-characteristic:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.container-characteristic-image img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.container-characteristic-text h3 {
+    font-size: 2.8rem;
+    text-wrap: balance;
+    color: var(--color-primary);
+}
+
+.container-characteristic-text p {
+    margin: 20px 0;
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.container-characteristic-text button {
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container-characteristic-text button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Deja activos los botones en todos los bloques pares e impares para que no queden vacíos */
+.container-characteristic:nth-of-type(even) .container-characteristic-text button {
+    display: inline-block; 
+}
+
+footer {
+    margin-top: 80px;
+    background-color: #222; /* Fondo oscuro para el footer */
+    height: 150px;
+    align-content: center;
+    border-top: 5px solid var(--color-primary); /* Línea roja superior decorativa */
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--color-accent);
+}
+
+footer p {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
