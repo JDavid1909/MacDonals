@@ -91,7 +91,7 @@ select option {
 
 .main-section {
     height: 100dvh;
-    background-image: url("Img/Fondo.jpg");
+    background-image: url("Fondo.jpg");
     background-color: #111;
     background-size: cover;
     background-position: center;
